@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-light{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.delius-regular {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+.font-24{
+    font-size: 24px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-20{
+    font-size: 20px;
+}
+
+.cor-EBEBEB{
+    color: #EBEBEB;
+}
+
+.cor-333333{
+    color: #333333;
+}
+
+.cor-3A3A3A{
+    color: #3A3A3A;
+}
+
+.cor-C5CFC6{
+    color: #C5CFC6;
+}
+
+.cor-ADADAD{
+    color: #ADADAD;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}

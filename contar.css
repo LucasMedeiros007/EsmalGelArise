@@ -1,0 +1,73 @@
+.contar-back{
+    background-color: #9D9D93;
+}
+
+.contar{
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contar p{
+    font-size: 36px;
+    line-height: 52px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    color: #EBEBEB;
+}
+
+.contar p::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 25px;
+    width: 16px;
+    height: 3px;
+    justify-self: center;
+    background-color: #C5CFC6;
+}
+
+.contar p strong{
+    font-size: 48px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 1200px){
+    .contar p{
+        margin-left: 32px;
+    }
+}
+
+@media(max-width: 700px){
+    .contar{
+        margin: 0 16px;
+        display: grid;
+    }
+    .contar p{
+        position: relative;
+        margin-left: 20px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        line-height: 26px;
+        color: #EBEBEB;
+        font-size: 14px;
+    }
+    .contar p::before{
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 10px;
+        width: 16px;
+        height: 3px;
+        justify-self: center;
+        background-color: #C5CFC6;
+    }
+    .contar p strong{
+        font-size: 20px;
+        display: block;
+        margin-bottom: 20px;
+    }
+}

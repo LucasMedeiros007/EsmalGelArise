@@ -1,0 +1,38 @@
+@import "./tipografia.css";
+@import "./header.css";
+@import "./main.css";
+@import "./conheca.css";
+@import "./agradecer.css";
+@import "./contar.css";
+@import "./footer.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+}
+body ,html{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.botao{
+    background-color: #525A42;
+    color: #EBEBEB;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.divisao{
+    content: "";
+    width: 85%;
+    height: 3px;
+    justify-self: center;
+    background-color: #C5CFC6;
+}
+.displayNone{
+    display: none;
+}
