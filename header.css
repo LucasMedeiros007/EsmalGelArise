@@ -12,7 +12,7 @@
     font-family: "Italiana", sans-serif;
     font-size: 24px;
 }
-.header img{
+.header .naveg{
     display: none;
 }
 
@@ -27,6 +27,10 @@ li a{
     color: #141414;
     display: block;
     position: relative;
+    transition: .3s;
+}
+li a:hover{
+    padding: 0 5px;
 }
 li a::after{
     content: "";
@@ -42,6 +46,43 @@ li a:hover::after{
     width: 110%;
 }
 
+/* navegacao */
+
+.overlay{
+    box-shadow: inset 0 630px 80px rgba(0, 0, 0, 0.6);
+    width: 0;
+    height: 0;
+    z-index: 9;
+    position: fixed;
+    width: 0;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: .3s;
+    backdrop-filter: blur(15px);
+}
+
+.overlay-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.overlay-content a{
+    font-size: 24px;
+    color: #EBEBEB;
+}
+
+.closebtn{
+    font-size: 45px;
+    position: absolute;
+    top: -3px;
+    right: 16px;
+    color: #EBEBEB;
+}
+
 @media(max-width: 1200px){
     .header{
         padding: 0 16px;
@@ -52,8 +93,11 @@ li a:hover::after{
     ul{
         display: none;
     }
-    .header img{
+    .header .naveg{
         display: inline-block;
+    }
+    .header .naveg button{
+        border: none;
     }
     .header h2{
         font-size: 20px;

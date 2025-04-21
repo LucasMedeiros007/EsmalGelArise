@@ -9,12 +9,29 @@
 <body>
     <header class="header">
         <h2>ARISE MEDEIROS</h2>
-        <img src="./imagens/icones/menu_24dp_141414_FILL0_wght400_GRAD0_opsz24.svg" alt="">
         <ul>
             <li><a class="roboto-regular SobM" href="#quemSouEu">Sobre mim</a></li>
             <li><a class="roboto-regular" href="#contato">Whatsapp</a></li>
             <li><a class="roboto-regular" href="#contato">Instagram</a></li>
         </ul>
+
+        <div class="naveg">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times;</a>
+
+                <div class="overlay-content">
+                    <a class="roboto-regular SobM" href="#quemSouEu" onclick="fecharNav()">Sobre mim</a>
+                    <a class="roboto-regular" href="#contato" onclick="fecharNav()">Whatsapp</a>
+                    <a class="roboto-regular" href="#contato" onclick="fecharNav()">Instagram</a>
+                </div>
+            </div>
+
+            <button class="nav-button" onclick="abrirNav()">
+                <img src="./imagens/icones/menu_24dp_141414_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </button>
+        </div>
+
+        
     </header>
 
     <main>
@@ -23,7 +40,7 @@
             <div class="sombra-interna"></div>
             <div class="conhecerMais">
                 <p class="poppins-regular font-24 cor-EBEBEB">Olá, eu sou a Arise Medeiros, conheça meu curso de Esmaltação em Gel.</p>
-                <a href="#conheca" class="poppins-regular font-16 cor-EBEBEB botao">SABER MAIS</a>
+                <a id="botao" href="#conheca" class="poppins-regular font-16 cor-EBEBEB botao">SABER MAIS</a>
             </div>
         </div>
 
@@ -90,6 +107,7 @@
         
     </footer>
 
+    <script src="./navBar.js"></script>
     <script src="./script.js"></script>
     <script src="./rolagem.js"></script>
     <script src="./rolagemSobreMim.js"></script>
