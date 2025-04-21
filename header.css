@@ -25,6 +25,21 @@ li{
 }
 li a{
     color: #141414;
+    display: block;
+    position: relative;
+}
+li a::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: #141414;
+    margin-top: 4px;
+    position: absolute;
+    transition: 0.3s;
+}
+li a:hover::after{
+    width: 110%;
 }
 
 @media(max-width: 1200px){
