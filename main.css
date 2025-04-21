@@ -27,8 +27,8 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 76px;
-  
+  height: 46px;
+  align-self: flex-start;
   background-color: #C5CFC6;
   pointer-events: none;
   z-index: -1;
