@@ -11,9 +11,9 @@ function fecharNav(){
 const botao = document.getElementById("botao");
 
 botao.addEventListener('touchstart', () => {
-botao.style.padding = '12px 24px';
+    botao.style.padding = '12px 24px';
 });
 
 botao.addEventListener('touchend', () => {
     botao.style.padding = '10px 20px';
-    });
+});
