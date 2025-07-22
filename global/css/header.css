@@ -83,6 +83,7 @@ li a:hover::after{
     width: 24px;
     height: 24px;
     background-image: url('./imagens/icones/icons8-whatsapp.svg');
+    background-image: url('../../cursoEsmalt/imagens/icones/icons8-whatsapp.svg');
     left: -12px;
     top: 5px;
 }
@@ -91,7 +92,7 @@ li a:hover::after{
     position: absolute;
     width: 24px;
     height: 24px;
-    background-image: url('./imagens/icones/icons8-instagram.svg');
+    background-image: url('../../cursoEsmalt/imagens/icones/icons8-instagram.svg');
     left: -12px;
     top: 5px;
 }
