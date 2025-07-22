@@ -31,6 +31,10 @@ footer{
     margin-left: 20px;
 }
 
+.footer-back div:nth-child(2){
+    margin-bottom: 0;
+}
+
 .endereco a{
     text-decoration: none;
     color: #adadad;
@@ -44,6 +48,23 @@ iframe{
     width: 60%;
 }
 
+.nWhats{
+    color: #474843;
+    background-color: #adadad;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+}
+.nWhats::after{
+    content: '';
+    background: url('./imagens/icones/clique.svg');
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+}
+
 @media(max-width: 1200px){
     .footer-back div{
         margin-left: 16px;
@@ -51,11 +72,11 @@ iframe{
     .map{
         grid-column: 1;
         display: flex;
-        justify-content: center;
+        justify-content: start;
     }
     iframe{
         width: 100%;
-        
+        margin-left: 18px;
     }
 }
 @media(max-width: 700px){
@@ -77,5 +98,14 @@ iframe{
     }
     .footer-back div h2::before{
         top: 12px;
+    }
+}
+
+@media(max-width: 385px){
+    .map{
+        justify-content: center;
+    }
+    iframe{
+        margin: 0;
     }
 }
