@@ -1,0 +1,92 @@
+.conheca-back {
+background-color: #474843;
+}
+
+.conheca {
+margin: 0 auto 0 16px;
+display: grid;
+padding-bottom: 12px;
+}
+
+.conheca .botao{
+    justify-self: start;
+    margin-left: 18px;
+}
+
+.conheca .botao a{
+    color: #EBEBEB;
+}
+
+.conheca h1 {
+justify-self: center;
+margin-top: 16px;
+margin-bottom: 5px;
+font-size: 64px;
+color: #EBEBEB;
+
+}
+
+.conheca .divisao {
+margin-bottom: 22px;
+
+}
+
+.conheca p {
+position: relative;
+margin-left: 20px;
+line-height: 26px;
+margin-bottom: 10px;
+color: #C5CFC6;
+font-size: 36px;
+line-height: 52px;
+
+}
+
+.conheca p::before {
+content: "";
+position: absolute;
+left: -20px;
+top: 68px;
+width: 16px;
+height: 3px;
+background-color: #C5CFC6;
+}
+
+.conheca strong {
+font-size: 20px;
+display: block;
+margin-bottom: 20px;
+font-size: 48px;
+margin-top: 42px;
+}
+
+@media(max-width: 1200px){
+.conheca{
+    margin-left: 16px;
+}
+}
+
+/* === Responsivo === */
+@media (max-width: 700px) {
+.conheca{
+    margin: 0 auto 0 16px;
+}
+.imgcurso {
+    width: 200px;
+    height: 300px;
+}
+.conheca p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.conheca h1{
+    font-size: 24px;
+}
+.conheca strong{
+    font-size: 20px;
+    margin-top: 0;
+}
+.conheca p::before{
+    top: 10px;
+}
+}

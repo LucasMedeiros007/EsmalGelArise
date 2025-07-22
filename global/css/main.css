@@ -1,0 +1,13 @@
+@import "../../cursoEsmalt/css/main.css";
+
+.imgPrincipal img{
+    height: 750px;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media(max-width:700px){
+    .imgPrincipal img{
+        height: auto;
+    }
+}
