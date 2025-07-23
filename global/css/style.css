@@ -26,10 +26,10 @@ a{
     border-radius: 4px;
     transition: .3s;
 }
-.botao:hover{
+/* .botao:hover{
     background-color: #6f7b57;
     padding: 12px 24px;
-}
+} */
 .divisao{
     content: "";
     width: 85%;
