@@ -49,9 +49,7 @@ iframe{
 }
 
 .nWhats{
-    color: #474843;
-    background-color: #adadad;
-    padding: 5px;
+    color: #58dc00;
     border-radius: 4px;
     position: relative;
 }
@@ -63,6 +61,10 @@ iframe{
     position: absolute;
     top: 0px;
     right: -20px;
+}
+
+.instagram{
+    color: rgb(209, 119, 254);
 }
 
 @media(max-width: 1200px){
