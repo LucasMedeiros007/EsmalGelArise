@@ -29,10 +29,10 @@ li a{
     position: relative;
     transition: .3s;
 }
-li a:hover{
+header li a:hover{
     padding: 0 5px;
 }
-li a::after{
+header li a::after{
     content: "";
     display: block;
     width: 0px;
@@ -42,7 +42,7 @@ li a::after{
     position: absolute;
     transition: 0.3s;
 }
-li a:hover::after{
+header li a:hover::after{
     width: 110%;
 }
 

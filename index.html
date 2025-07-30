@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./global/css/style.css">
+    <script>document.documentElement.className += ' js'</script>
     <title>Arise Medeiros</title>
 </head>
 <body>
     <header class="header">
         <h2>ARISE MEDEIROS</h2>
-        <ul>
+        <ul class="js-menu">
             <li><a class="roboto-regular SobM" href="#quemSouEu">Sobre mim</a></li>
             <li><a class="roboto-regular" href="http://Wa.me/556799916858" target="_blank">Whatsapp</a></li>
             <li><a class="roboto-regular" href="#contato">Instagram</a></li>
@@ -19,7 +20,7 @@
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times;</a>
 
-                <div class="overlay-content">
+                <div class="overlay-content js-menu">
                     <a class="roboto-regular SobM" href="#quemSouEu" onclick="fecharNav()">Sobre mim</a>
                     <a class="roboto-regular" href="http://Wa.me/556799916858" target="_blank" onclick="fecharNav()">Whatsapp</a>
                     <a class="roboto-regular" href="https://www.instagram.com/studioarisemedeiros?igsh=MXRwOTRtY3ZqZDVsaA==" target="_blank" onclick="fecharNav()">Instagram</a>
@@ -34,16 +35,16 @@
     </header>
 
     <main>
-        <div class="imgPrincipal container">
-            <img src="./global/img/principal.jpg" alt="">
+        <div class="imgPrincipal container js-scroll">
+            <img src="./global/img/principal.png" alt="">
             <div class="sombra-interna"></div>
-            <div class="conhecerMais">
+            <div class="conhecerMais js-menu">
                 <p class="poppins-regular font-24 cor-EBEBEB">Olá, eu sou a Arise Medeiros, conheça meus serviços.</p>
                 <a id="botao" href="#conheca" class="poppins-regular font-16 cor-EBEBEB botao">SABER MAIS</a>
             </div>
         </div>
 
-        <div id="quemSouEu" class="qmSouEu container">
+        <div id="quemSouEu" class="qmSouEu container js-scroll especific">
             <h1 class="poppins-medium font-24 cor-333333">Quem sou eu?</h1>
             <div class="divisao"></div>
             <p class="roboto-light font-14">Sou Arise Fiaes Medeiros,<br>
@@ -52,7 +53,7 @@
         </div>
     </main>
 
-    <section id="conheca" class="conheca-back">
+    <section id="conheca" class="conheca-back js-scroll">
         <div class="conheca container">
             <h1 class="poppins-medium font-24 cor-EBEBEB">Conheça os serviços</h1>
             <div class="divisao"></div>
@@ -93,7 +94,7 @@
         
     </section>
 
-    <section class="break">
+    <section class="break js-scroll">
         <div class="break-container">
             <img src="./global/img/agradecida.jpg" alt="">
             <div class="sombra"></div>
@@ -104,21 +105,21 @@
 
     <footer>
         <div class="footer-back">
-            <div id="contato">
-                <h2 class="cor-EBEBEB font-24 roboto-regular">CONTATO</h2>
-                <p class="roboto-regular font-14 cor-ADADAD"><a href="https://www.instagram.com/studioarisemedeiros?igsh=MXRwOTRtY3ZqZDVsaA==" class="instagram" target="_blank">Instagram: studioarisemedeiros</a></p>
-                <p class="roboto-regular font-14 cor-ADADAD"><a href="http://Wa.me/556799916858" class="nWhats" target="_blank">Whatsapp: +55 67 9991-6858</a></p>
-            </div>
-            <!-- <div class="address"> -->
-            <div>
-                <h2 class="cor-EBEBEB font-24 roboto-regular">ENDEREÇO</h2>
-                <P class="roboto-regular font-14 cor-ADADAD endereco">Rua: Kalil Naban, 709 - Guanandi, Campo Grande - MS</P>
-            </div>
+            <div class="js-scroll">
+                <div id="contato">
+                    <h2 class="cor-EBEBEB font-24 roboto-regular">CONTATO</h2>
+                    <p class="roboto-regular font-14 cor-ADADAD"><a href="https://www.instagram.com/studioarisemedeiros?igsh=MXRwOTRtY3ZqZDVsaA==" class="instagram" target="_blank">Instagram: studioarisemedeiros</a></p>
+                    <p class="roboto-regular font-14 cor-ADADAD"><a href="http://Wa.me/556799916858" class="nWhats" target="_blank">Whatsapp: +55 67 9991-6858</a></p>
+                </div>
+                <div>
+                    <h2 class="cor-EBEBEB font-24 roboto-regular">ENDEREÇO</h2>
+                    <P class="roboto-regular font-14 cor-ADADAD endereco">Rua: Kalil Naban, 709 - Guanandi, Campo Grande - MS</P>
+                </div>
 
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d467.13475015830187!2d-54.64887249938775!3d-20.50302844850499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e52643a3b44f%3A0x39375cd0482d66c2!2sCentro%20Est%C3%A9tico%20Reviver!5e0!3m2!1spt-BR!2sbr!4v1752788781091!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d467.13475015830187!2d-54.64887249938775!3d-20.50302844850499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e52643a3b44f%3A0x39375cd0482d66c2!2sCentro%20Est%C3%A9tico%20Reviver!5e0!3m2!1spt-BR!2sbr!4v1752788781091!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <!-- </div> -->
         </div>
         
     </footer>
@@ -126,5 +127,7 @@
     <!-- <a href="./cursoEsmalt/index.html">aqui</a> -->
 
     <script src="./global/javascript/navBar.js"></script>
+    <script src="./global/javascript/scrolldow.js"></script>
+    <script src="./global/javascript/scrollSuave.js"></script>
 </body>
 </html>
