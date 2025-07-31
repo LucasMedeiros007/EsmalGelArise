@@ -3,6 +3,7 @@
 @import "./css/conheca.css";
 @import "./css/agradecer.css";
 @import "./css/contar.css";
+@import "./css/duracao.css";
 
 .js .js-scroll {
   opacity: 0;

@@ -16,7 +16,7 @@
     display: none;
 }
 
-ul{
+.header ul{
     display: flex;
     gap: 24px;
 }
@@ -97,6 +97,18 @@ header li a:hover::after{
     top: 5px;
 }
 
+
+.overlay-content a:nth-child(4)::before{
+    content: "✳";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    /* background-image: url('../../cursoEsmalt/imagens/icones/icons8-instagram.svg'); */
+    /* margin-right: 12px; */
+    top: -4px;
+    left: -12px;
+}
+
 .closebtn{
     font-size: 45px;
     position: absolute;
@@ -112,7 +124,7 @@ header li a:hover::after{
     }
 }
 @media(max-width: 700px){
-    ul{
+    .header ul{
         display: none;
     }
     .header .naveg{

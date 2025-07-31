@@ -35,13 +35,20 @@
     content: "";
     position: absolute;
     left: -20px;
-    top: 62px;
+    top: 22px;
     width: 16px;
     height: 3px;
     background-color: #C5CFC6;
   }
   
   .conheca strong {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 48px;
+    margin-top: 42px;
+  }
+  .qmSouEu strong {
     font-size: 20px;
     display: block;
     margin-bottom: 20px;
@@ -94,7 +101,7 @@
   /* === Responsivo === */
   @media (max-width: 700px) {
     .conheca{
-      margin: 16px;
+      margin: 16px 16px 0 16px;
     }
     .imgcurso {
       width: 200px;
@@ -107,12 +114,12 @@
     .conheca h1{
       font-size: 24px;
     }
-    .conheca strong{
+    .qmSouEu strong{
       font-size: 20px;
       margin-top: 0;
     }
     .conheca p::before{
-      top: 20px;
+      top: 10px;
     }
 
     .conheca-back{
