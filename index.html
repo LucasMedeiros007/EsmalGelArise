@@ -11,10 +11,17 @@
     <header class="header">
         <h2>ARISE MEDEIROS</h2>
         <ul class="js-menu">
+            <li data-dropdown>
+                <a class="roboto-regular">Serviços</a>
+                <ul class="dropdown-menu">
+                    <li><a class="roboto-regular" target="_blank" href="./cursoEsmalt/index.html">Esmaltação em Gel</a></li>
+                    <li><a class="roboto-regular" href="">Pintura de unha</a></li>
+                    <li><a class="roboto-regular" href="">Pedicure</a></li>
+                </ul>
+            </li>
             <li><a class="roboto-regular SobM" href="#quemSouEu">Sobre mim</a></li>
             <li><a class="roboto-regular" href="http://Wa.me/556799916858" target="_blank">Whatsapp</a></li>
             <li><a class="roboto-regular" href="#contato">Instagram</a></li>
-            <li><a class="roboto-regular" href="#conheca">Serviços</a></li>
         </ul>
 
         <div class="naveg">
@@ -25,7 +32,14 @@
                     <a class="roboto-regular SobM" href="#quemSouEu" onclick="fecharNav()">Sobre mim</a>
                     <a class="roboto-regular" href="http://Wa.me/556799916858" target="_blank" onclick="fecharNav()">Whatsapp</a>
                     <a class="roboto-regular" href="https://www.instagram.com/studioarisemedeiros?igsh=MXRwOTRtY3ZqZDVsaA==" target="_blank" onclick="fecharNav()">Instagram</a>
-                    <a class="roboto-regular" href="#conheca" target="_blank" onclick="fecharNav()">Serviços</a>
+                    <li data-dropdown class="overlayServicos">
+                        <a class="roboto-regular">Serviços</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="roboto-regular" target="_blank" href="./cursoEsmalt/index.html">Esmaltação em Gel</a></li>
+                            <li><a class="roboto-regular" href="">Pintura de unha</a></li>
+                            <li><a class="roboto-regular" href="">Pedicure</a></li>
+                        </ul>
+                    </li>
                 </div>
             </div>
 
@@ -128,5 +142,6 @@
     <script src="./global/javascript/navBar.js"></script>
     <script src="./global/javascript/scrolldow.js"></script>
     <script src="./global/javascript/scrollSuave.js"></script>
+    <script src="./global/javascript/dropdown.js"></script>
 </body>
 </html>

@@ -29,9 +29,9 @@ li a{
     position: relative;
     transition: .3s;
 }
-header li a:hover{
+/* header li a:hover{
     padding: 0 5px;
-}
+} */
 header li a::after{
     content: "";
     display: block;
@@ -42,9 +42,9 @@ header li a::after{
     position: absolute;
     transition: 0.3s;
 }
-header li a:hover::after{
+/* header li a:hover::after{
     width: 110%;
-}
+} */
 
 /* navegacao */
 
@@ -98,15 +98,16 @@ header li a:hover::after{
 }
 
 
-.overlay-content a:nth-child(4)::before{
+.overlay-content .overlayServicos a:nth-child(1)::before{
     content: "✳";
     position: absolute;
     width: 24px;
     height: 24px;
-    /* background-image: url('../../cursoEsmalt/imagens/icones/icons8-instagram.svg'); */
-    /* margin-right: 12px; */
     top: -4px;
     left: -12px;
+}
+.overlay-content .dropdown-menu a::before{
+    display: none;
 }
 
 .closebtn{

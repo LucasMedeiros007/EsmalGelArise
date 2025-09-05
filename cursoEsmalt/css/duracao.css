@@ -37,10 +37,6 @@
     width: 0;
 }
 
-.duracao p{
-  font-size: 2.5rem;
-}
-
 @media (max-width: 1200px){
   .duracao{
     margin: 0px 16px 42px 16px;
