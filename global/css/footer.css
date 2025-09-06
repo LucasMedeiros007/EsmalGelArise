@@ -55,7 +55,7 @@ iframe{
 }
 .nWhats::after{
     content: '';
-    background: url('./imagens/icones/clique.svg');
+    background: url('/global/img/icones/clique.svg');
     width: 24px;
     height: 24px;
     position: absolute;
