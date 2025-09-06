@@ -3,6 +3,7 @@ const wrapper = document.querySelector('.servicos');
 const dist = {finalPosition: 0, startX: 0, movement: 0}
 
 function onStart(event){
+    transition(false)
     let typeMove
     if(event.type === 'mousedown'){
         event.preventDefault()
@@ -25,6 +26,8 @@ function onEnd(event){
     const moveType = (event.type === 'mouseup')? 'mousemove' : 'touchmove'
     wrapper.removeEventListener(moveType, onMove)
     dist.finalPosition = dist.movePosition
+    transition(true)
+    changeSlideOnEnd()
 }
 
 function updatePosition(clientX){
@@ -38,13 +41,72 @@ function moveSlide(distX){
 }
 
 //slidesconfig
+let indice = {
+    prev: 0,
+    active: 1,
+    next: 1,
+}
 
+function changeSlideOnEnd(){
+    if(dist.movement>30 && indice.next !== undefined){
+        activeNextSlide()
+    } else if(dist.movement < -30 && indice.prev !== undefined){
+        activePrevSlide()
+    } else{
+        changeSlide(indice.active)
+    }
+}
+
+function slidePosition(slide){
+    const margin = (wrapper.offsetWidth - slide.offsetWidth)/2
+    return -(slide.offsetLeft-margin)
+}
+
+let slideArray
 function slidesConfig(){
-    const slideArray = [...slide.children]
-    console.log(slideArray)
+    slideArray = [...slide.children].map((element)=>{
+        const position = slidePosition(element)
+        return {
+            position, 
+            element
+        }
+    })
+}
+
+function changeSlide(index){
+    moveSlide(slideArray[index].position)
+    slideIndexNav(index)
+    dist.finalPosition = slideArray[index].position
+}
+
+function slideIndexNav(index){
+    const last = slideArray.length - 1
+    indice = {
+        prev: index ? index - 1 : undefined,
+        active: index,
+        next: index === last ? undefined : index + 1,
+    }
+}
+
+function activePrevSlide(){
+    if(indice.prev !== undefined){
+        changeSlide(indice.prev)
+    }
+
+}
+function activeNextSlide(){
+    if(indice.next !== undefined){
+        changeSlide(indice.next)
+    }
+}
+
+function transition(ativo){
+    slide.style.transition = ativo ? 'transform .3s' : ''
 }
 
 slidesConfig()
+// changeSlide(5)
+// activeNextSlide()
 
 wrapper.addEventListener('mousedown', onStart)
 wrapper.addEventListener('touchstart', onStart)
