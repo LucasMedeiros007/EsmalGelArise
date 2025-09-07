@@ -16,6 +16,7 @@
     margin-top: 42px;
     margin-bottom: 42px;
     color: #EBEBEB;
+    color: #111;
 }
 
 .contar p::before{
@@ -52,7 +53,6 @@
         margin-top: 16px;
         margin-bottom: 16px;
         line-height: 26px;
-        color: #EBEBEB;
         font-size: 14px;
     }
     .contar p::before{
