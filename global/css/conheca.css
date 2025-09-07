@@ -100,3 +100,20 @@ margin-top: 42px;
   top: 0;
   border-radius: 4px;
 }
+
+@media(max-width: 700px){
+    .poppins-medium.font-24.cor-EBEBEB{
+        font-size: 24px;
+    }
+
+    .servico-especifico{
+        max-width: 250px;
+    }
+    .conheca strong{
+        font-size: 1.5rem;
+    }
+
+    .conheca p{
+        line-height: 1.5;
+    }
+}
