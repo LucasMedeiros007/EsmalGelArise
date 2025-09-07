@@ -55,42 +55,6 @@
     font-size: 48px;
     margin-top: 42px;
   }
-  
-  /* === Carrossel Infinito === */
-  .carrossel-infinito {
-    overflow: hidden;
-  }
-  
-  .carrossel-track {
-    display: flex;
-    width: max-content;
-    gap: 60px;
-    animation: deslizar 20s linear infinite;
-    animation-play-state: running;
-    margin-bottom: 38px;
-  }
-
-  .carrossel-infinito:hover .carrossel-track {
-    animation-play-state: paused;
-  }
-  
-  .imgcurso {
-    width: 400px;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 4px;
-    flex-shrink: 0;
-  }
-  
-  /* Animação contínua e infinita */
-  @keyframes deslizar {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
 
   @media(max-width: 1200px){
     .conheca{
@@ -132,3 +96,28 @@
     }
   }
   
+
+.servicos ul{
+    display: flex;
+    gap: 40px;
+    max-width: max-content;
+}
+
+.servico-especifico{
+    flex-shrink: 0;
+    position: relative;
+    max-width: max-content;
+    max-width: 300px;
+}
+
+.servico-especifico img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: block;
+}
+@media(max-width: 700px){
+    .servico-especifico{
+        max-width: 200px;
+    }
+}
