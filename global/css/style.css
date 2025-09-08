@@ -56,3 +56,7 @@ a{
 .js .especific.ativo {
   opacity: 1;
 } */
+
+.header h2 a{
+  color: #111;
+}

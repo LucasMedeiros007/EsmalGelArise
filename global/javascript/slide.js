@@ -1,8 +1,19 @@
 const slide = document.querySelector('.servicos ul');
 const wrapper = document.querySelector('.servicos');
 const dist = {finalPosition: 0, startX: 0, movement: 0}
+let contador = 0
+let indice = {
+    prev: 0,
+    active: 1,
+    next: 1,
+}
 
+let tempo5
 function onStart(event){
+    clearInterval(intervaloSemTocar)
+    if(tempo5){
+        clearTimeout(tempo5)
+    }
     transition(false)
     let typeMove
     if(event.type === 'mousedown'){
@@ -28,6 +39,13 @@ function onEnd(event){
     dist.finalPosition = dist.movePosition
     transition(true)
     changeSlideOnEnd()
+
+    contador = indice.active
+
+    tempo5 = setTimeout(()=>{
+        iniciarIntervalo()
+        console.log('tempo 5')
+    }, 0)
 }
 
 function updatePosition(clientX){
@@ -41,12 +59,6 @@ function moveSlide(distX){
 }
 
 //slidesconfig
-let indice = {
-    prev: 0,
-    active: 1,
-    next: 1,
-}
-
 function changeSlideOnEnd(){
     if(dist.movement>30 && indice.next !== undefined){
         activeNextSlide()
@@ -100,15 +112,40 @@ function activeNextSlide(){
     }
 }
 
-function transition(ativo){
-    slide.style.transition = ativo ? 'transform .3s' : ''
+function transition(ativo, trans = '.3s'){
+    slide.style.transition = ativo ? 'transform '+trans : ''
 }
 
+function onResize(){
+    setTimeout(()=>{
+            slidesConfig()
+            changeSlide(indice.active)
+    },100)
+}
+
+
+window.addEventListener('resize', onResize)
+
 slidesConfig()
-// changeSlide(5)
-// activeNextSlide()
 
 wrapper.addEventListener('mousedown', onStart)
 wrapper.addEventListener('touchstart', onStart)
 wrapper.addEventListener('mouseup', onEnd)
 wrapper.addEventListener('touchend', onEnd)
+
+let intervaloSemTocar
+function iniciarIntervalo(){
+    intervaloSemTocar = setInterval(intervalo, 2550)
+}
+iniciarIntervalo()
+function intervalo(){
+    contador++
+    if(contador <= slideArray.length-1){
+        transition(true, '0.7s')
+        changeSlide(indice.prev = contador)
+    } else{
+        transition(true, '1.3s')
+        changeSlide(indice.active = 0)
+        contador = 0
+    }
+}
