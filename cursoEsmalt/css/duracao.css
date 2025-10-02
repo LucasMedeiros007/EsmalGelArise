@@ -1,6 +1,7 @@
 .duracao {
   display: grid;
-  margin: 0 auto 42px auto;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .duracao h1 {
@@ -19,7 +20,7 @@
   margin-left: 20px;
   line-height: 26px;
   color: #3A3A3A;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 52px;
 }
 
@@ -33,9 +34,13 @@
   background-color: #C5CFC6;
 }
 
-.duracao p:nth-child(2)::before{
-    width: 0;
+.duracao strong{
+  font-size: 1.7rem;
 }
+
+/* .duracao p:nth-child(2)::before{
+    width: 0;
+} */
 
 @media (max-width: 1200px){
   .duracao{
@@ -43,6 +48,10 @@
   }
 }
 @media (max-width: 700px) {
+
+  .duracao br{
+    display: none;
+  }
   
     .duracao {
       margin: 16px 16px 32px 16px;

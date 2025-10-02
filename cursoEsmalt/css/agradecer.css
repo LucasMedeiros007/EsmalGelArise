@@ -71,25 +71,37 @@
     }
 }
 
-@media(max-width: 403px){
+@media(max-width: 445px){
     .citacao{
-        font-size: 20px;
+        font-size: 26px;
         top: 25%;
         max-width: 80vw;
     }
 }
 
-@media(max-width: 349px){
+@media(max-width: 412px){
     .citacao{
         font-size: 20px;
-        top: 15%;
+        top: 35%;
         max-width: 80vw;
+    }
+}
+
+@media(max-width: 387px){
+    .citacao{
+        top: 25%;
+    }
+}
+
+@media(max-width: 345px){
+    .imgAgradecer p{
+        line-height: 38px;
     }
 }
 
 @media(max-width: 333px){
     .imgAgradecer p{
-        line-height: 38px;
+        line-height: 30px;
     }
 }
 
@@ -102,6 +114,6 @@
 @media(max-width: 290px){
     .imgAgradecer p{
         font-size: 18px;
-        line-height: 32px;
+        line-height: 28px;
     }
 }

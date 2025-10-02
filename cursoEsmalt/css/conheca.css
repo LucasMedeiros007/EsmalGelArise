@@ -31,15 +31,15 @@
     line-height: 52px;
   }
   
-  .conheca p::before {
+  /* .conheca p::before {
     content: "";
     position: absolute;
     left: -20px;
-    top: 22px;
+    top: 12px;
     width: 16px;
     height: 3px;
     background-color: #C5CFC6;
-  }
+  } */
   
   .conheca strong {
     font-size: 20px;
