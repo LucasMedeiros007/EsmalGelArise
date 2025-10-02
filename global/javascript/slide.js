@@ -1,7 +1,7 @@
 alert(
   'ATENÇÃO! Site ainda em desenvolvimento. O site foi pensado para o público mobile',
 );
-if (window.innerWidth <= 5000) {
+if (window.innerWidth > 50000) {
   // teste();
 } else {
   const slide = document.querySelector('.servicos ul');
