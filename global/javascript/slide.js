@@ -23,12 +23,6 @@ function teste() {
 
     let tempo5;
     function onStart(event) {
-      if (intervaloSemTocar) {
-        clearInterval(intervaloSemTocar);
-      }
-      if (tempo5) {
-        clearTimeout(tempo5);
-      }
       transition(false);
       let typeMove;
       if (event.type === 'mousedown') {
@@ -59,12 +53,6 @@ function teste() {
       changeSlideOnEnd();
 
       contador = indice.active;
-
-      tempo5 = setTimeout(() => {
-        if (intervaloSemTocar) {
-          iniciarIntervalo();
-        }
-      }, 0);
     }
 
     function updatePosition(clientX) {
@@ -150,22 +138,22 @@ function teste() {
     wrapper.addEventListener('mouseup', onEnd);
     wrapper.addEventListener('touchend', onEnd);
 
-    let intervaloSemTocar;
-    function iniciarIntervalo() {
-      intervaloSemTocar = setInterval(intervalo, 2550);
-    }
-    iniciarIntervalo();
-    function intervalo() {
-      contador++;
-      if (contador <= slideArray.length - 1) {
-        transition(true, '0.7s');
-        changeSlide((indice.prev = contador));
-      } else {
-        transition(true, '1.3s');
-        changeSlide((indice.active = 0));
-        contador = 0;
-      }
-    }
+    //   let intervaloSemTocar;
+    //   function iniciarIntervalo() {
+    //     intervaloSemTocar = setInterval(intervalo, 2550);
+    //   }
+    // iniciarIntervalo();
+    //   function intervalo() {
+    //     contador++;
+    //     if (contador <= slideArray.length - 1) {
+    //       transition(true, '0.7s');
+    //       changeSlide((indice.prev = contador));
+    //     } else {
+    //       transition(true, '1.3s');
+    //       changeSlide((indice.active = 0));
+    //       contador = 0;
+    //     }
+    //   }
   }
 }
 
