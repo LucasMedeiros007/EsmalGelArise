@@ -1,6 +1,6 @@
-alert(
-  'ATENÇÃO! Site ainda em desenvolvimento. O site foi pensado para o público mobile',
-);
+// alert(
+//   'ATENÇÃO! Site ainda em desenvolvimento. O site foi pensado para o público mobile',
+// );
 if (window.innerWidth > 50000) {
   // teste();
 } else {
